@@ -10,8 +10,8 @@
 >Sets your wallpaper to the bing.com image of the day
 
 # Usage
-Double click the *wallpaperd* file
-It's located originally in the *dist/* folder
+Double click the *wallpaperd* file.  
+It's located originally in the *dist/* folder.
 
 ![tutorial](tutorial.gif)
 
