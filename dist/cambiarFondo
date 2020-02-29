@@ -6,7 +6,7 @@ params=$(cat info.json | jgrep --start images -s url)
 url="http://bing.com$params"
 nombre_archivo="fondo$(date '+%s').jpg"
 echo $nombre_archivo > nombre_archivo.txt
-curl -# $url -o $nombre_archivo > /dev/null 2>&1
+curl -# $url -o $nombre_archivo
 dir=$(pwd)
 imagen="$dir/$nombre_archivo"
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "'"$imagen"'"'

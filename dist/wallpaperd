@@ -1,5 +1,5 @@
 #!/bin/sh
-/Users/edgardeduardo/Programacion/CLIPS/cambiar_fondo/dist/cambiarFondo > /dev/null 2>&1
+/Users/edgardeduardo/Programacion/CLIPS/wallpaperd/dist/cambiarFondo > /dev/null 2>&1
 echo "..............._.._........................................._.";
 echo "..............|.||.|.......................................|.|";
 echo "._._._.._____.|.||.|..____..._____..____..._____...____..__|.|";
