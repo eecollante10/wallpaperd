@@ -1,0 +1,12 @@
+#!/bin/sh
+cd `dirname $0`
+rm $(cat nombre_archivo.txt)
+curl "http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US" > info.json 
+params=$(cat info.json | jgrep --start images -s url)
+url="http://bing.com$params"
+nombre_archivo="fondo$(date '+%s').jpg"
+echo $nombre_archivo > nombre_archivo.txt
+curl -# $url -o $nombre_archivo > /dev/null 2>&1
+dir=$(pwd)
+imagen="$dir/$nombre_archivo"
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "'"$imagen"'"'
