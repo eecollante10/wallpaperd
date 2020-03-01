@@ -9,16 +9,14 @@
 ``` 
 >Sets your wallpaper to the bing.com image of the day
 
-# Usage
-Double click the *wallpaperd* file.  
-It's located originally in the *dist/* folder.
-
-![tutorial](tutorial.gif)
-
 # Installation
 * Clone or download the repo
 * Double click the *install.command* file will add the *wallpaperd* file to the desktop
 * Double click the *wallpaperd* file to set the wallpaper
+![tutorial](tutorial.gif)
+
+# Usage
+Double click the *wallpaperd* file.  
 
 # Run on startup
 * Open **System Preferences** => **Users and Groups** => **Login Items**
