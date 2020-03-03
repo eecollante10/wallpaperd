@@ -9,6 +9,9 @@
 ``` 
 >Sets your wallpaper to the bing.com image of the day
 
+# Dependencies
+JGrep
+
 # Installation
 * Clone or download the repo
 * Double click the *install.command* file will add the *wallpaperd* file to the desktop

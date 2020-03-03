@@ -10,10 +10,9 @@ echo Se permiten tamaños de 16 × 16, 32 × 32, 48 × 48, 128 × 128, 256 × 25
 
 cd ..
 cat titulo.txt >> dist/wallpaperd
-cd dist
-title=$(cat info.json | jgrep --start images -s title)
-cd ..
-echo "printf '%s\\\n' \"$title\" | sed -e 's/\\\\\\/\//g'" >> dist/wallpaperd
+echo "cd \`dirname \$0\`" >> dist/wallpaperd
+echo "title=\$(cat info.json | jgrep --start images -s title)" >> dist/wallpaperd
+echo "printf '%s\\\n' \"\$title\" | sed -e 's/\\\\\\/\//g'" >> dist/wallpaperd
 echo "sleep 2" >> dist/wallpaperd
 echo "osascript -e 'tell application \"Terminal\" to quit'" >> dist/wallpaperd
 

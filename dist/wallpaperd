@@ -7,6 +7,8 @@ echo "|.|.|.|(____.||.||.|.|.._.\.(____.||.._.\.|.___.|./.___)/._..|";
 echo "|.|.|.|/.___.||.||.|.|.|_|.|/.___.||.|_|.||.____||.|...(.(_|.|";
 echo ".\___/.\_____|.\_)\_)|..__/.\_____||..__/.|_____)|_|....\____|";
 echo ".....................|_|...........|_|........................";
-printf '%s\n' "Casting a vote for women's history" | sed -e 's/\\/\//g'
+cd `dirname $0`
+title=$(cat info.json | jgrep --start images -s title)
+printf '%s\n' "$title" | sed -e 's/\\/\//g'
 sleep 2
 osascript -e 'tell application "Terminal" to quit'
